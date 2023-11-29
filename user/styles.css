@@ -88,11 +88,16 @@ button{
 }
 
 
+button{
+    transition:all 0.5s ease-in-out;
+}
+
+button:hover{
+    text-decoration: underline;
+    background-color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
+}
 button a{
     color: black;
     text-decoration:none;
-}
-
-button a:hover{
-    text-decoration: underline;
 }
