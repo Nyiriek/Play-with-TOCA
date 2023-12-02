@@ -85,17 +85,8 @@ label {
     background-color: #fff;
   }
   
-  /* Style the labels when the radio button is checked */
+  /* Styling for label*/
   .answer:checked + label {
     background-color: #40DFAF;
     border-color: #16c3dd;
   } 
-
-  .bat-man {
-    position: absolute;
-    bottom: 0;
-    left: 81%;
-    translate: -39%;
-    width: 70vh;
-    height: 70vh;
- }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="questions.css" />
+    <link rel="stylesheet" href="visual.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Caveat:wght@500&family=Roboto:wght@400;500;700&family=Saira+Condensed:wght@500&family=Young+Serif&display=swap"
       rel="stylesheet"
@@ -12,16 +12,17 @@
     <style>
       body {
         font-family: Balsamiq Sans;
-        margin-top: 120px;
+        margin: 0;
         padding: 0;
-        background-color: #FFDB5E;
+        background-color: #9adff8;
       }
       .quiz-container {
-        background-color: #dfc6f6;
+        background-color: hsl(271, 73%, 87%);
         max-width: 800px;
-        margin: 50px auto;
+        margin: 0px auto;
         padding: 20px;
-        border-radius: 10px;
+        padding: 20px;
+        border-radius: 30px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
       .quiz-header {
@@ -32,13 +33,21 @@
         display: none;
       }
       label {
-        display: block;
+        display: inline-block;
         cursor: pointer;
         padding: 10px;
-        border: 4px solid #ccc;
-        border-radius: 10px;
-        margin-bottom: 10px;
+        border: 5px solid black;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        width: 60px;
         background-color: #fff;
+      }
+      img {
+        max-width: 20%;
+        border-radius: 10px;
+        border: 5px solid #ffdb5e;
+        height: auto;
+        margin-top: 20px;
       }
       button {
         display: block;
@@ -63,26 +72,18 @@
           <li>
             <input type="radio" name="answer" id="a" class="answer" />
             <label for="a" id="a_text">Answer...</label>
+            <img id="a_image" alt="Option A Image" />
           </li>
           <li>
             <input type="radio" name="answer" id="b" class="answer" />
             <label for="b" id="b_text">Answer...</label>
+            <img id="b_image" alt="Option B Image" />
           </li>
-          <li>
-            <input type="radio" name="answer" id="c" class="answer" />
-            <label for="c" id="c_text">Answer...</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="d" class="answer" />
-            <label for="d" id="d_text">Answer...</label>
-          </li>
-
         </ul>
+      </div>
       <button id="submit">Submit</button>
     </div>
-    <div class="image">
-        <img src="assets/bat.png" class="bat-man" alt="minionImage" />
-      </div>
-    <script src="questions.js"></script>
+
+    <script src="visual.js"></script>
   </body>
 </html>
