@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
-/* Reset default styling */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -8,6 +7,9 @@ body, h1, h2, h3, p, ul, li {
   
   body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9ADFF8;
   }
   
   .quiz-container {
@@ -43,7 +45,7 @@ body, h1, h2, h3, p, ul, li {
   .answer-label {
     display: inline-block;
     padding: 10px;
-    border: 2px solid #ddd;
+    border: 10px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -69,18 +71,9 @@ body, h1, h2, h3, p, ul, li {
   button:hover {
     background-color: #0056b3;
   }
-  
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #9ADFF8;
-  }
 
 
-
-  /* ... Your existing CSS ... */
+/* Styling the label */
 
 label {
     display: block;
@@ -96,7 +89,13 @@ label {
   .answer:checked + label {
     background-color: #40DFAF;
     border-color: #16c3dd;
-  }
-  
-  /* ... The rest of your CSS ... */
-  
+  } 
+
+  .bat-man {
+    position: absolute;
+    bottom: 0;
+    left: 81%;
+    translate: -39%;
+    width: 70vh;
+    height: 70vh;
+ }
