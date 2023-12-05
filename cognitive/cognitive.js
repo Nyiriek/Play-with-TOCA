@@ -1,9 +1,9 @@
 function redirectToNextPage() {
-    // Redirect to the next page (replace 'nextPage.html' with the actual URL)
+    // Redirect to the next page
     window.location.href = 'questions.html';
 }
 
 function redirectToHomePage() {
-    // Redirect to the home page (replace 'home.html' with the actual URL)
+    // Redirect to the home page 
     window.location.href = 'home.html';
 }

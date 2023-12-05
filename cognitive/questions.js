@@ -120,8 +120,13 @@ if (answer) {
   else {
     quiz.innerHTML = `
           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-          <button onclick="history.go(0)">Play Again</button>
+          <button onclick="redirectToNextPage()">Continue</button>
       `;
   }
 }
 });
+
+function redirectToNextPage() {
+  // Redirect to the next page
+  window.location.href = 'visual.html';
+}

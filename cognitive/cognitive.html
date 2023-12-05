@@ -17,22 +17,30 @@
     />
   </head>
   <body>
+    <!-- Container for cognitive test -->
+
     <div class="container">
       <div id="parent">
         <div class="head">BRAIN ADVENTURE CHALLENGE</div>
         ,
         <div class="sub-div"></div>
       </div>
-      <div class="sub">Cognitive test for personalised learning</div>
-      <div class="scroll-icon-box">
-        <a href="#about" class="scroll-btn">
-          <i class="uil uil-mouse-alt"></i>
-          <p>Scroll Down</p>
-        </a>
+
+      <!-- Ask whether the kid is ready to play game -->
+
+      <div class="confirmation-box" id="confirmationBox">
+        <h2>Are you ready to take the quiz?</h2>
+        <button class="btn" onclick="redirectToNextPage()">Yes</button>
+        <button class="btn" onclick="redirectToHomePage()">No</button>
       </div>
+
+      <!-- Image section with a minion image -->
+
       <div class="image">
         <img src="assets/minion.png" class="minion" alt="minionImage" />
       </div>
     </div>
+
+    <script src="cognitive.js"></script>
   </body>
 </html>
