@@ -23,3 +23,9 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// To redirect to the cognitive test page
+
+function redirectToAnotherPage() {
+	window.location.href = '/cognitive/cognitive.html';
+  }

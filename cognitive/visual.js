@@ -77,9 +77,13 @@ const quizData = [
       else {
         quiz.innerHTML = `
             <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            <button onclick="history.go(0)">Play Again</button>
+            <button onclick="redirectToHomePage()">Done</button>
         `;
       }
     }
   });
   
+  function redirectToHomePage() {
+    // Redirect to the home page
+    window.location.href = '/Homepage/home.html#services';
+  }

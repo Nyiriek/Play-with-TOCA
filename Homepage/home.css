@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Balsamiq Sans;
 	scroll-behavior: smooth;
 }
 a {
@@ -405,6 +405,38 @@ p {
 }
 /* End Services Section */
 
+/* Cognitive button */
+.cognitive-button {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  margin: 0;
+  background-color: #40DFAF; /* Set your desired background color */
+}
+.c-container {
+	font-family:Balsamiq Sans ;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.c-container > h1 {
+	margin-bottom: 50px;
+}
+.to-cognitive {
+	padding: 15px 30px;
+	font-family:Balsamiq Sans ;
+	font-size: 16px;
+	background-color: #007bff; /* Set your desired button color */
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+ .to-cognitive:hover {
+	background-color: #0056b3; /* Set your desired button color on hover */
+  }
 /* Projects section */
 #projects .projects {
 	flex-direction: column;

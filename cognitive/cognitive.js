@@ -5,5 +5,5 @@ function redirectToNextPage() {
 
 function redirectToHomePage() {
     // Redirect to the home page 
-    window.location.href = 'home.html';
+    window.location.href = '/Homepage/home.html';
 }

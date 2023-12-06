@@ -49,7 +49,7 @@ const quizData = [
       },
       {
         question: "7. What do you use to brush your teeth?",
-        a: "comb",
+        a: "Comb",
         b: "Toothbrush",
         c: "Spoon",
         d: "Fork",
