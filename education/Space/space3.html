@@ -39,8 +39,6 @@
 
       #parent {
         position: relative;
-        display: block;
-        border-radius: "200px";
       }
 
       .sub {
@@ -68,6 +66,7 @@
         font-weight: 500;
         padding: 12px 20px;
         background: #ffdb5e;
+        margin: 20px;
         border: none;
         border-radius: 10px;
         cursor: pointer;
@@ -121,11 +120,11 @@
     <div class="container">
       <div id="parent">
         <div class="sub-div">
-          <iframe
+          <<iframe
             width="470"
             height="404"
-            src="https://edpuzzle.com/embed/media/65719329395b634198162a00"
-            frameborder="6"
+            src="https://edpuzzle.com/embed/media/6571c54d23d235414bd41721"
+            frameborder="0"
             allowfullscreen
           ></iframe>
         </div>
@@ -134,14 +133,13 @@
       <!-- Ask whether the kid is ready to play game -->
 
       <div class="confirmation-box" id="confirmationBox">
-        <h2>Click Done to go to the next lesson</h2>
-        <button class="btn" onclick="redirectToNextPage()">Done</button>
+        <button class="btn" onclick="redirectToHomePage()">Previous</button>
       </div>
     </div>
 
     <script>
-      function redirectToNextPage() {
-        // Redirect to the next page
+      function redirectToHomePage() {
+        // Redirect to the home page
         window.location.href = "space2.html";
       }
     </script>
