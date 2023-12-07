@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cognitive_test</title>
+    <link href="cognitive.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Caveat:wght@500&family=Roboto:wght@400;500;700&family=Saira+Condensed:wght@500&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #2d92b8;
+        height: 100vh;
+        font-family: Balsamiq Sans;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .head {
+        background-color: #f88748;
+        height: 30vh;
+        color: #ffffff;
+        border: solid 1px black;
+        border-radius: 20px;
+        width: 100vh;
+        font-size: 60px;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+      }
+
+      #parent {
+        position: relative;
+      }
+      .sub-div {
+        background-color: #ffffff;
+        height: 30vh;
+        border: solid 1px black;
+        border-radius: 20px;
+        width: 90vh;
+        margin: 50px;
+        margin-left: 30px;
+      }
+      .sub {
+        background-color: #9adff8;
+        width: 50vh;
+        margin: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        justify-content: center;
+        font-size: 20px;
+        height: 15vh;
+        border: solid 1px black;
+        border-radius: 20px;
+      }
+
+      .confirmation-box {
+        text-align: center;
+        background-color: #dfc6f6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        font-weight: 500;
+        padding: 12px 20px;
+        background: #ffdb5e;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .btn > i {
+        margin-left: 10px;
+      }
+      .btn:hover {
+        background: #40dfaf;
+        color: black;
+      }
+      .minion {
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        translate: -39%;
+        width: 70vh;
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container for cognitive test -->
+
+    <div class="container">
+      <div id="parent">
+        <div class="sub-div">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZjOmLfE-O6I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Ask whether the kid is ready to play game -->
+
+      <div class="confirmation-box" id="confirmationBox">
+        <h2>Click Done when you are done with the video.</h2>
+        <button class="btn" onclick="redirectToNextPage()">Done</button>
+      </div>
+    </div>
+
+    <script>
+      function redirectToNextPage() {
+        // Redirect to the next page
+        window.location.href = "questions.html";
+      }
+
+      function redirectToHomePage() {
+        // Redirect to the home page
+        window.location.href = "/Homepage/home.html";
+      }
+    </script>
+  </body>
+</html>
