@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cognitive_test</title>
+    <link href="cognitive.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Caveat:wght@500&family=Roboto:wght@400;500;700&family=Saira+Condensed:wght@500&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Homepage/home.css" />
+    <style>
+      body {
+        background-color: #2d92b8;
+        height: 100vh;
+        font-family: Balsamiq Sans;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .head {
+        background-color: #f88748;
+        height: 30vh;
+        color: #ffffff;
+        border: solid 1px black;
+        border-radius: 20px;
+        width: 100vh;
+        font-size: 60px;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #parent {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        border-radius: "200px";
+      }
+
+      .sub {
+        background-color: #9adff8;
+        width: 50vh;
+        margin: 50px;
+        margin-left: 150px;
+        margin-right: 150px;
+        justify-content: center;
+        font-size: 20px;
+        height: 15vh;
+        border: solid 1px black;
+        border-radius: 20px;
+      }
+
+      .sub-div {
+        margin-right: 200px;
+      }
+      .s-div {
+        width: 470px;
+        height: 404px;
+        overflow: hidden;
+        border-radius: 10px; /* Add border-radius to iframes */
+      }
+
+      .confirmation-box {
+        text-align: center;
+        background-color: #dfc6f6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        font-weight: 500;
+        padding: 12px 20px;
+        background: #ffdb5e;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .btn > i {
+        margin-left: 10px;
+      }
+      .btn:hover {
+        background: #40dfaf;
+        color: black;
+      }
+      .minion {
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        translate: -39%;
+        width: 70vh;
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>Play with <span>TOCA</span></h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="/Homepage/home.html" data-after="Home">Home</a></li>
+              <li>
+                <a href="/Homepage/home.html#services" data-after="Discover"
+                  >Discover</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Container for educational content using Edpuzzle -->
+
+    <div class="container">
+      <div id="parent">
+        <div class="sub-div">
+          <iframe
+            width="470"
+            height="404"
+            src="https://edpuzzle.com/embed/media/65733552cc428c419f825fce"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="s-div">
+          <iframe
+            width="470"
+            height="404"
+            src="https://edpuzzle.com/embed/media/6573358c8bd0d941a2c5ee52"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Ask whether the kid is ready to play game -->
+
+      <div class="confirmation-box" id="confirmationBox">
+        <button class="btn" onclick="redirectToHomePage()">Previous</button>
+        <button class="btn" onclick="redirectToNextPage()">Next</button>
+      </div>
+    </div>
+
+    <script>
+      function redirectToHomePage() {
+        // Redirect to the next page
+        window.location.href = "science.html";
+      }
+
+      function redirectToNextPage() {
+        // Redirect to the next page
+        window.location.href = "science.html";
+      }
+    </script>
+  </body>
+</html>
