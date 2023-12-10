@@ -1,0 +1,107 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(.Copy\ of\ Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.parent-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-box{
+    position: absolute;
+    margin: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    align-self: center;
+    display: block;
+    width: 50%;   
+}
+
+.signup-header{
+    text-align: center;
+    font-size: 350%;
+    font-weight: 700;
+
+}
+
+.signup-header span{
+    color: rgb(243, 227, 87);
+}
+.signup-prompt{
+    text-align: center;
+    font-weight: 350;
+    font-size: 150%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+#age {
+
+    border-radius: 20px;
+    background-color:skyblue;
+}
+
+#username {
+    border-radius: 20px;
+    background-color: rgb(58, 156, 58);
+}
+
+#email {
+    border-radius: 20px;
+    background-color:rgb(58, 156, 58) ;
+}
+input{
+    height: 60px;
+}
+
+label{
+    text-align: left;
+    margin-left: 2%;
+    font-weight: 500;    
+}
+
+button{
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color:rgb(39, 39, 212)  ;
+    height:50px;
+    padding: auto;
+}
+
+
+button{
+    transition:all 0.5s ease-in-out;
+}
+
+button:hover{
+    text-decoration: underline;
+    background-color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
+}
+button a{
+    color: black;
+    text-decoration:none;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
