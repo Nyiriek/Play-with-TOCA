@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from forms import MyModelForm
+# from forms import MyModelForm
 # Create your views here.
 def sign_up(request):
     if request.method == 'POST':
