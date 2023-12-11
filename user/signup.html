@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Play WIth TOCA - signup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/user/static/styles.css" rel="stylesheet">
+    </head>
+    <body>
+            <div class="signup-box">
+                <h1 class="signup-header">Play with <span>TOCA</span></h1>
+                <h5 class="signup-prompt">Sign up now for a world of learning and fun</h3> 
+                <form method="POST">
+                    <label for="username">Username:</label>
+                    <input class="1" type="text" name="username" id="username" required>
+                    <label for="age">Age:</label>
+                    <input class="2" type="number" name="age" id="age" required>
+                    <label for="">Email:</label>
+                    <input class="3" type="email" name="email" id="email" required>
+                    <button type="button" onclick="validateAndSubmit()">Signup</button>
+                </form>           
+            </div>
+            <script>
+                function validateAndSubmit() {
+                    var username = document.getElementById('username').value;
+                    var age = document.getElementById('age').value;
+                    var email = document.getElementById('email').value;
+        
+                    // Perform basic form validation (you can add more complex validation as needed)
+                    if (!username || !age || !email) {
+                        alert('Please fill in all fields');
+                        return;
+                    }
+        
+                    // Create a data object
+                    var formData = {
+                        username: username,
+                        age: age,
+                        email: email
+                    };
+        
+                    // Save data to localStorage
+                    localStorage.setItem('user', JSON.stringify(formData));
+        
+                    alert('Signup successful!');
+        
+                    // Redirect to the homepage or handle the response accordingly
+                    window.location.href = '/Homepage/home.html';
+                }
+            </script>
+    </body>
+</html>
