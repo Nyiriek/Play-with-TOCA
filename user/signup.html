@@ -1,22 +1,89 @@
 <html>
     <head>
         <title>Play WIth TOCA - signup</title>
-        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/user/static/styles.css" rel="stylesheet">
     </head>
     <body>
+        <div class="signup-box">
+            <h1 class="signup-header">Play with <span>TOCA</span></h1>
+            <h5 class="signup-prompt">Sign up now for a world of learning and fun</h5>
+            <form method="POST">
+                <label for="username">Username:</label>
+                <input class="1" type="text" name="username" id="username" required>
+                <label for="age">Age:</label>
+                <input class="2" type="number" name="age" id="age" required>
+                <label for="email">Email:</label>
+                <input class="3" type="email" name="email" id="email" required>
+                <button type="button" onclick="validateAndSubmit()">Signup</button>
+            </form>
+        </div>
+    
+        <!-- Custom alert modal container -->
+        <div id="customAlert" class="custom-alert">
+            <p id="alertMessage">This is a customizable alert!</p>
+            <button onclick="closeCustomAlert()">OK</button>
+        </div>
+    
+        <!-- Overlay background -->
+        <div id="overlay" class="overlay"></div>
+    
+        <script>
+            function validateAndSubmit() {
+                var username = document.getElementById('username').value;
+                var age = document.getElementById('age').value;
+                var email = document.getElementById('email').value;
         
-            <div class="signup-box">
-                <h1 class="signup-header">Play with <span>TOCA</span></h1>
-                <h5 class="signup-prompt">Sign up now for a world of learning and fun</h3> 
-                <form>
-                    <label for="username">Username:</label>
-                    <input class="1" type="text" name="username" id="username" required>
-                    <label for="age">Age:</label>
-                    <input class="2" type="number" name="age" id="age" required>
-                    <label for="">Email:</label>
-                    <input class="3" type="email" name="email" id="email" required>
-                    <button><h2><a href="#">Signup</a></h2></button>
-                </form>           
-            </div>
+                // Perform basic form validation (you can add more complex validation as needed)
+                if (!username || !age || !email) {
+                    showAlert('Please fill in all fields');
+                    return;
+                }
+        
+                // Create a data object
+                var formData = {
+                    username: username,
+                    age: age,
+                    email: email
+                };
+        
+                // Save data to localStorage
+                localStorage.setItem('user', JSON.stringify(formData));
+        
+                // Show custom alert for 5 seconds
+                showAlert('Signup successful!', 5000);
+        
+                // Redirect to the homepage after the alert duration
+                setTimeout(function () {
+                    window.location.href = '/Homepage/home.html';
+                }, 5000);
+            }
+        
+            function showAlert(message, duration) {
+                var modal = document.getElementById('customAlert');
+                var overlay = document.getElementById('overlay');
+                var alertMessage = document.getElementById('alertMessage');
+        
+                // alert message
+                alertMessage.innerText = message;
+        
+                modal.style.display = 'block';
+                overlay.style.display = 'block';
+        
+                // Close the alert after the specified duration
+                setTimeout(function () {
+                    closeCustomAlert();
+                }, duration);
+            }
+        
+            function closeCustomAlert() {
+                var modal = document.getElementById('customAlert');
+                var overlay = document.getElementById('overlay');
+        
+                modal.style.display = 'none';
+                overlay.style.display = 'none';
+            }
+        </script>
+        
     </body>
-</html>
+    </html>
