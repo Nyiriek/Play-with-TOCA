@@ -71,19 +71,25 @@ const quizData = [
   submitButton.addEventListener("click", () => {
     const answer = getSelected();
     if (answer) {
-      if (answer === quizData[currentQuiz].correct) score++;
-      currentQuiz++;
-      if (currentQuiz < quizData.length) loadQuiz();
-      else {
-        quiz.innerHTML = `
-            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-            <button onclick="redirectToHomePage()">Done</button>
-        `;
-      }
+        if (answer === quizData[currentQuiz].correct) score++;
+        currentQuiz++;
+        if (currentQuiz < quizData.length) {
+            loadQuiz();
+        } else {
+            quiz.innerHTML = `
+                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+                <button onclick="checkAndRedirect()">Done</button>
+            `;
+        }
     }
-  });
-  
-  function redirectToHomePage() {
-    // Redirect to the home page
-    window.location.href = '/Homepage/home.html#services';
-  }
+});
+
+function checkAndRedirect() {
+    if (score < 5) {
+        // Redirect to Space class 1 if the score is less than 5
+        window.location.href = '/education/Space/space.html';
+    } else {
+        // Redirect to Space class 2 if the score is 5 or more
+        window.location.href = '/education/Space/space2.html';
+    }
+}
