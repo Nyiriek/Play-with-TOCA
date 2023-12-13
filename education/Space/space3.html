@@ -91,6 +91,43 @@
         width: 70vh;
         height: 80vh;
       }
+
+      @media (max-width: 768px) {
+        /* Media query for screens up to 768px wide */
+        .head {
+          font-size: 8vw; /* Adjusted font size for smaller screens */
+        }
+
+        .sub {
+          font-size: 6vw; /* Adjusted font size for smaller screens */
+        }
+
+        .container {
+          display: block;
+        }
+        .sub-div {
+          max-width: 768px !important;
+          width: 220px !important;
+        }
+        .confirmation-box {
+          display: block;
+          width: 100vw;
+        }
+
+        #header .nav-list ul {
+          display: none;
+        }
+
+        #header .nav-bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 100%;
+          max-width: 768px;
+          padding: 0 10px;
+        }
+      }
     </style>
   </head>
   <body>
